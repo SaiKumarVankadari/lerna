@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/lerna",
+  "sourceRoot": "apps/lerna/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/lerna/tsconfig.app.json"
+  },
+  "projects": {
+    "lerna": {
+      "type": "application",
+      "root": "apps/lerna",
+      "entryFile": "main",
+      "sourceRoot": "apps/lerna/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lerna/tsconfig.app.json"
+      }
+    },
+    "backend": {
+      "type": "application",
+      "root": "apps/backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/backend/tsconfig.app.json"
+      }
+    }
+  }
+}
